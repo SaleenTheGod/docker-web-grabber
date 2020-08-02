@@ -1,0 +1,8 @@
+version: '3'
+services:
+  docker-web-grabber:
+    image: docker-web-grabber:latest
+    volumes:
+      - /media/plex-mount/webgrab:/webgrab
+    environment:
+      URL: "https://thetrove.net/Books/Dungeons%20&%20Dragons/5th%20Edition%20(5e)/"
