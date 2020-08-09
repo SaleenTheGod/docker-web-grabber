@@ -1,8 +1,8 @@
 version: '3'
 services:
-  docker-web-grabber:
-    image: docker-web-grabber:latest
+  ${DOCKER_IMAGE_NAME}:
+    image: ${DOCKER_IMAGE_NAME}:latest
     volumes:
       - /media/plex-mount/webgrab:/webgrab
     environment:
-      URL: "https://thetrove.net/Books/Dungeons%20&%20Dragons/5th%20Edition%20(5e)/"
+      URL: "https://thetrove.net/Books/Dungeons%20&%20Dragons/5th%20Edition%20(5e)/3rd%20Party/"
