@@ -1,6 +1,6 @@
 version: '3'
 services:
-  ${DOCKER_IMAGE_NAME}:
+  docker-web-grabber:
     image: ${DOCKER_IMAGE_NAME}:latest
     volumes:
       - /media/plex-mount/webgrab:/webgrab
